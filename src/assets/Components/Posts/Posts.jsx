@@ -3,14 +3,18 @@ import Post from "../Post/Post";
 
 
 const Posts = () => {
+
     const posts = useLoaderData();
     console.log(posts);
     return (
         <div>
             <p>Posts: {posts.length}</p>
-            {
-                posts.map(posts => <Post key={posts.id} post={posts}></Post>)
-            }
+            <div  className="Users">
+                {
+                    posts.map(post => <Post key={post.id} post={post}></Post>)
+                }
+            </div>
+
         </div>
     );
 };
