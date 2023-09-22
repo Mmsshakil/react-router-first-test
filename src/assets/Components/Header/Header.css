@@ -2,3 +2,8 @@
 nav a{
     margin-right: 10px;
 }
+
+a.active {
+    color: red;
+    background-color: black;
+  }
